@@ -1,0 +1,24 @@
+{
+    "name": "@zardoy/xo-config",
+    "version": "0.0.1",
+    "description": "Shared XO config for my projects",
+    "repository": "zardoy/xo-config",
+    "author": "Vitaly Turovsky <vital2580@icloud.com>",
+    "license": "MIT",
+    "engines": {
+        "node": ">=12"
+    },
+    "main": "config.js",
+    "scripts": {},
+    "keywords": [
+        "xo",
+        "config",
+        "configuration"
+    ],
+    "peerDependencies": {
+        "xo": "*"
+    },
+    "files": [
+        "config.js"
+    ]
+}
