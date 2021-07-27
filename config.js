@@ -1,12 +1,19 @@
 const config = {
     "space": 4,
     "rules": {
-        // it's just not convenient
+        // it's just not convenient. I got used to it
         "capitalized-comments": "off",
         "no-unused-vars": "warn",
         "no-empty-function": "warn",
         "template-curly-spacing": "error",
         "prefer-template": "error",
+        // TODO error on stable. Warn on PRs
+        "@typescript-eslint/no-unsafe-assignment": "warn",
+        // TODO enable once Error type in catch clauses
+        "@typescript-eslint/no-unsafe-call": "off",
+        "@typescript-eslint/no-unsafe-member-access": "off",
+        // don't see a reason for that. Also, don't know how to re-export in that case
+        "@typescript-eslint/no-var-requires": "off",
         "no-implicit-coercion": ["error", {
             boolean: false,
             number: false

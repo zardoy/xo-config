@@ -1,5 +1,7 @@
 # XO Config
 
+> This package doesn't use SemVer
+
 Opinionated [config](./config.js) (with comments).
 
 ## How to Use
