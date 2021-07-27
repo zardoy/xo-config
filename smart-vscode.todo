@@ -1,0 +1,8 @@
+Auto Cursor Positioning:
+    ☐ Auto place cursor in middle of braces @critical
+Linter:
+    ☐ Disable linting on typing for:  @high
+Auto Format:
+    ☐ Auto format Markdown titles on typing @high
+    ☐ Format like with TypeScript built-in formatter. Especially on enter @high 
+    ☐ Auto paste commas in object properties, arrays and function arguments list. And disable comma dangle.
