@@ -55,6 +55,8 @@ const config = {
         "unicorn/custom-error-definition": "error",
         "unicorn/consistent-destructuring": "warn",
         "unicorn/empty-brace-spaces": "off",
+        // its too early for me. TODO enable back
+        "unicorn/prefer-module": "off",
         "unicorn/filename-case": [
             "error",
             {
