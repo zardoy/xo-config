@@ -124,7 +124,8 @@ const config = {
                     },
                 }
             }
-        ]
+        ],
+        curly: ["error", "multi", "consistent"]
     }
 };
 
