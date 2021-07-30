@@ -1,6 +1,6 @@
 {
     "name": "@zardoy/xo-config",
-    "version": "0.0.3",
+    "version": "0.0.4",
     "description": "Shared XO config for my projects",
     "repository": "zardoy/xo-config",
     "author": "Vitaly Turovsky <vital2580@icloud.com>",
