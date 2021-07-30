@@ -7,8 +7,10 @@ const config = {
         "no-empty-function": "warn",
         "template-curly-spacing": "error",
         "prefer-template": "error",
+        "import/no-anonymous-default-export": "off",
         // TODO error on stable. Warn on PRs
         "@typescript-eslint/no-unsafe-assignment": "warn",
+        "@typescript-eslint/no-unsafe-argument": "off",
         // TODO enable once Error type in catch clauses
         "@typescript-eslint/no-unsafe-call": "off",
         "@typescript-eslint/no-unsafe-member-access": "off",
@@ -79,7 +81,50 @@ const config = {
                 }
             }
         ],
-        "unicorn/no-array-reduce": "warn"
+        "unicorn/no-array-reduce": "warn",
+        "@typescript-eslint/no-confusing-void-expression": [
+            "error",
+            { "ignoreArrowShorthand": true }
+        ],
+        "unicorn/prevent-abbreviations": [
+            "error",
+            {
+                // these replacements are too aggressive by default. most of the abbreviations are known
+                "replacements": {
+                    "e": {
+                        "error": false
+                    },
+                    // de facto standard
+                    "i": false,
+                    "func": false,
+                    "dir": false,
+                    "dirs": false,
+                    "ctx": false,
+                    "arg": false,
+                    "args": false,
+                    "req": false,
+                    // result actually
+                    "res": false,
+                    // "tmp": false,
+                    "prop": false,
+                    "str": false,
+                    "props": false,
+                    "param": false,
+                    // even got using params!
+                    "params": false,
+                    // react
+                    "ref": false,
+                    "refs": false,
+
+                    "cmd": {
+                        "command": true
+                    },
+                    "errCb": {
+                        "handleError": true
+                    },
+                }
+            }
+        ]
     }
 };
 
