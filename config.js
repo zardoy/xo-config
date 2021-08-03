@@ -83,8 +83,10 @@ module.exports = (extendRules = {}) => {
                 }
             ],
             "unicorn/no-array-reduce": "warn",
-            // try to enable once cjs problems are solved
+            // TODO try to enable once cjs problems are solved (esbuild)
             "unicorn/prefer-node-protocol": "off",
+            // It is just would be super inconveniet for me. So far I didn't have any problems with that. I'll try to enable it once import system in VSCode is smarter.
+            "node/prefer-global/process": "off",
             "@typescript-eslint/no-confusing-void-expression": [
                 "error",
                 { "ignoreArrowShorthand": true }
