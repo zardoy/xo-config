@@ -130,6 +130,8 @@ module.exports = (extendRules = {}) => {
                     }
                 }
             ],
+            // sometimes things can't be run in parallel
+            "no-await-in-loop": "warn",
             curly: ["error", "multi", "consistent"],
             ...extendRules
         }
