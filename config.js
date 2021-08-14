@@ -185,6 +185,8 @@ module.exports = (extendRules = {}) => {
                     prop: 'ignore',
                 },
             ],
+            // sometimes things can't be run in parallel
+            'no-await-in-loop': 'warn',
             ...extendRules,
         },
     }
