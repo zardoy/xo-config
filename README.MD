@@ -22,6 +22,29 @@ It uses 4 spaces instead of hard tab, because not all websites have [normalized 
 
 Or for another example, every tab in code printed in console would look like it has 8 spaces width. This rule doesn't make sense for me.
 
+## Prettier
+
+This config has disabled (at least I tried to disable) all options, that prettier can handle.
+
+I always format code with prettier and fix all XO issues with <kbd>CMD+SHIFT+I</kdb>
+
+For now, I didn't find a way (and don't know what's the best) to include that config in all my projects:
+
+```json
+{
+    "prettier": {
+        "semi": false,
+        "singleQuote": true,
+        "proseWrap": "never",
+        "tabWidth": 4,
+        "trailingComma": "all",
+        "arrowParens": "avoid"
+    }
+}
+```
+
+At least, it's being included in popular projects.
+
 ## Mission: Make VSCode Smarter
 
 [TODO list](./smart-vscode.todo)
