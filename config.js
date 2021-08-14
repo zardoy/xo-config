@@ -4,6 +4,7 @@ module.exports = (extendRules = {}) => {
         rules: {
             // diabled, because too annoying. I'm using prettier for formatting
             semi: 'off',
+            '@typescript-eslint/semi': 'off',
             indent: 'off',
             '@typescript-eslint/indent': 'off',
             'react/jsx-indent': 'off',
