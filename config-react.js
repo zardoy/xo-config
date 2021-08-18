@@ -1,7 +1,7 @@
 const merge = require('lodash.defaultsdeep')
 
 module.exports = extendRules =>
-    merge(...require('./config'), {
+    merge(...require('./config')(extendRules), {
         rules: {
             'react/jsx-indent': 'off',
             // 'react/jsx-child-element-spacing': 'off',
@@ -50,6 +50,5 @@ module.exports = extendRules =>
                     prop: 'ignore',
                 },
             ],
-            ...extendRules,
         },
     })
