@@ -1,0 +1,21 @@
+lockfileVersion: 5.3
+
+specifiers:
+  '@types/node': ^16.6.1
+  lodash.defaultsdeep: ^4.6.1
+
+dependencies:
+  lodash.defaultsdeep: 4.6.1
+
+devDependencies:
+  '@types/node': 16.6.1
+
+packages:
+
+  /@types/node/16.6.1:
+    resolution: {integrity: sha512-Sr7BhXEAer9xyGuCN3Ek9eg9xPviCF2gfu9kTfuU2HkTVAMYSDeX40fvpmo72n5nansg3nsBjuQBrsS28r+NUw==}
+    dev: true
+
+  /lodash.defaultsdeep/4.6.1:
+    resolution: {integrity: sha512-3j8wdDzYuWO3lM3Reg03MuQR957t287Rpcxp1njpEa8oDrikb+FwGdW3n+FELh/A6qib6yPit0j/pv9G/yeAqA==}
+    dev: false

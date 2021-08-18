@@ -28,7 +28,7 @@ This config has disabled (at least I tried to disable) all options, that prettie
 
 I always format code with prettier and fix all XO issues with <kbd>CMD+SHIFT+I</kdb>
 
-For now, I didn't find a way (and don't know what's the best) to include that config in all my projects:
+For now, I didn't find a way (and don't know what's the best) to include that config in all my projects, so I'm explicitly including it only in popular ones:
 
 ```json
 {
@@ -38,12 +38,11 @@ For now, I didn't find a way (and don't know what's the best) to include that co
         "proseWrap": "never",
         "tabWidth": 4,
         "trailingComma": "all",
-        "arrowParens": "avoid"
+        "arrowParens": "avoid",
+        "printWidth": 150
     }
 }
 ```
-
-At least, it's being included in popular projects.
 
 ## Mission: Make VSCode Smarter
 

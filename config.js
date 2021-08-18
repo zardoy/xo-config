@@ -2,14 +2,22 @@ module.exports = (extendRules = {}) => {
     const config = {
         space: false,
         rules: {
+            // https://github.com/prettier/prettier/issues/3806
+            'operator-linebreak': 'off',
+            '@typescript-eslint/member-delimiter-style': 'off',
             // diabled, because too annoying. I'm using prettier for formatting
             semi: 'off',
             '@typescript-eslint/semi': 'off',
             indent: 'off',
             '@typescript-eslint/indent': 'off',
-            'react/jsx-indent': 'off',
+            '@typescript-eslint/quotes': 'off',
             quotes: 'off',
+
             '@typescript-eslint/object-curly-spacing': 'off',
+
+            // TODO review
+            // find it useless doesn't allow writing return next() in middlewares
+            '@typescript-eslint/no-confusing-void-expression': 'off',
 
             'semi-style': ['error', 'first'],
             curly: ['error', 'multi', 'consistent'],
@@ -139,52 +147,6 @@ module.exports = (extendRules = {}) => {
             //         }
             //     }
             // ],
-            // 'react/jsx-child-element-spacing': 'off',
-            // 'react/no-unknown-property': 'off',
-            // 'react/jsx-uses-vars': 'error',
-            'react/no-array-index-key': 'warn',
-            'react/prop-types': 'off',
-            // 'react/jsx-indent': [
-            //     'error',
-            //     4,
-            //     {
-            //         checkAttributes: true,
-            //         indentLogicalExpressions: true,
-            //     },
-            // ],
-            'react/jsx-indent-props': ['error', 4],
-            // jsx-max-props-per-line
-            'react/jsx-pascal-case': [
-                'error',
-                {
-                    // framer-motion (motion.div)
-                    allowNamespace: true,
-                },
-            ],
-            'react/jsx-tag-spacing': [
-                'error',
-                {
-                    closingSlash: 'never',
-                    beforeSelfClosing: 'always',
-                    afterOpening: 'never',
-                    beforeClosing: 'never',
-                },
-            ],
-            // TODO block jsx-no-bind arrow functions
-            'react/jsx-closing-bracket-location': ['error', 'line-aligned'],
-            'react/jsx-wrap-multilines': [
-                'error',
-                // I just find them redundant in most cases
-                {
-                    declaration: 'ignore',
-                    assignment: 'ignore',
-                    return: 'ignore',
-                    arrow: 'parens-new-line',
-                    condition: 'ignore',
-                    logical: 'ignore',
-                    prop: 'ignore',
-                },
-            ],
             // sometimes things can't be run in parallel
             'no-await-in-loop': 'warn',
             ...extendRules,
