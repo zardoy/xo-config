@@ -1,5 +1,7 @@
 # XO Config
 
+Temporarily deprecated in favor of [eslint-plugin-zardoy-config](https://github.com/zardoy/eslint-config/), will undeprecate once XO plugin for VSCode is good as ESLint plugin. (huge performace and compatibility issues, weird node_modules errors etc)
+
 > This package doesn't use SemVer
 
 Opinionated [config](./config.js) (with comments).
